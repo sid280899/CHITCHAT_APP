@@ -16,6 +16,15 @@ app.use(express.json());
 app.use(cookieParser());
 const port = process.env.PORT || 5000;
 
+// root test route
+app.get('/', (req, res) => {
+  res.send('🎉 ChitChat Backend is Running Successfully!');
+});
+
+server.listen(port, () => {
+  console.log(`your server is running on port ${port}`);
+});
+
 // routes
 import userRoute from './routes/user.route.js';
 import messageRoute from './routes/message.route.js';

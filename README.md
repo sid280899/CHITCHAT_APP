@@ -32,3 +32,23 @@ ChitChat lets users join rooms and chat instantly in a smooth, modern UI.
 git clone https://github.com/sid280899/CHITCHAT_APP.git
 cd CHITCHAT_APP
 ```
+
+## 🔧 Setup Frontend
+
+```bash
+cd client
+npm install
+npm start
+```
+
+## 🧩 Setup Backend
+
+```bash
+cd ../server
+npm install
+
+# Create a .env file inside /server with:
+# MONGO_URI=your-mongodb-uri
+# PORT=5000 (or your choice)
+npm start
+```
