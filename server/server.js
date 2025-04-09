@@ -5,6 +5,11 @@ import cookieParser from 'cookie-parser';
 import cors from 'cors';
 
 connectDB();
+// Log all incoming requests
+app.use((req, res, next) => {
+  console.log(`[${req.method}] ${req.originalUrl}`);
+  next();
+});
 
 app.use(
   cors({
