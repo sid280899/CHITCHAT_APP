@@ -13,7 +13,11 @@ app.use((req, res, next) => {
 
 app.use(
   cors({
-    origin: [process.env.CLIENT_URL],
+    origin: [
+      process.env.CLIENT_URL,
+      'https://chitchat-app-gules.vercel.app', // ✅ your production frontend domain
+      'https://chitchat-j5dz334ub-siddheshneharkar70-gmailcoms-projects.vercel.app', // ✅ auto-created Vercel domain
+    ],
     credentials: true,
   })
 );
