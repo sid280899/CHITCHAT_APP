@@ -1,0 +1,16 @@
+# Ignore frontend & backend node_modules
+client/node_modules/
+server/node_modules/
+
+# Ignore logs
+*.log
+
+# Ignore environment variables
+client/.env
+server/.env
+
+# Ignore OS junk files
+.DS_Store
+
+# Ignore IDE folders
+.vscode/
