@@ -15,12 +15,15 @@ app.use(
   cors({
     origin: [
       process.env.CLIENT_URL,
-      'https://chitchat-app-gules.vercel.app', // ✅ your production frontend domain
-      'https://chitchat-j5dz334ub-siddheshneharkar70-gmailcoms-projects.vercel.app', // ✅ auto-created Vercel domain
+      'https://chitchat-app-gules.vercel.app',
+      'https://chitchat-app.vercel.app',
+      'https://chitchat-app-git-main-siddheshneharkar70-gmailcoms-projects.vercel.app',
+      'https://chitchat-j5dz334ub-siddheshneharkar70-gmailcoms-projects.vercel.app',
     ],
     credentials: true,
   })
 );
+
 app.use(express.json());
 app.use(cookieParser());
 const port = process.env.PORT || 5000;
